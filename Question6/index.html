@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // how to find duplicate element from array with method
+        // let arrNumber = [2,2,4,6,8,8,9,9];
+        // let duplicate = arrNumber.filter((ele,index,arr) => arr.indexOf(ele)!==index)
+        // document.write(duplicate);
+
+        // how to find duplicate element from array without method
+    
+        let a = [1,2,3,4,5,2,3,4,];
+        for(let i = 0; i <a.length; i++){
+            for(let j = i + 1; j <= a.length; j++){
+                if(a[i] == a[j]){
+                    document.write("duplicate array is" + a[i])
+                }
+            }
+        }
+       
+    </script>
+</body>
+
+</html>
