@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // write a function that would allow to you do this problem 
+        
+        function createBase(base) {
+            return function (number) {
+                return base + number;
+            };
+        }
+
+        var addsix = createBase(6);
+
+        console.log(addsix(10)); // Output will be 16 (6 + 10)
+        console.log(addsix(20)); // Output will be 26 (6 + 20)
+
+    </script>
+</body>
+
+</html>
