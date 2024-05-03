@@ -9,23 +9,36 @@
     <script>
 
         // find prime no in javascript
-        let number = prompt("enter number")
-        if(number==1){
-            console.log(`${number} is not a prime number nether composite number`)
+        // let number = prompt("enter number")
+        // if(number==1){
+        //     console.log(`${number} is not a prime number nether composite number`)
 
-        } else if (number<1){
-            console.log(`prime number of ${number} is not possible`)
-        }else{
-         for(let i=2; i<number; i++){
-            if (number % 1 == 0){
-                console.log( `${number} is a prime number`)
-            }
-            else{
-                console.log( `${number} is a prime number`)
-            }
-         }
+        // } else if (number<1){
+        //     console.log(`prime number of ${number} is not possible`)
+        // }else{
+        //  for(let i=2; i<number; i++){
+        //     if (number % 1 == 0){
+        //         console.log( `${number} is a prime number`)
+        //     }
+        //     else{
+        //         console.log( `${number} is a prime number`)
+        //     }
+        //  }
        
-        }
+        // }
+        let no = 5;
+                        let temp = 0;
+                        for (let i = 2; i <= no - 1; i++) {
+                            if (no % i == 0) {
+                                temp++;
+                            }
+                        }
+                        if (temp== 0) {
+                            document.write("it's a prime number")
+                        }
+                        else {
+                            document.write("it's not a prime number")
+                        }
         
         
             </script>
