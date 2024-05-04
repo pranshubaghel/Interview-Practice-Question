@@ -17,15 +17,22 @@
 
         // how to find duplicate element from array without method
     
-        let a = [1,2,3,4,5,2,3,4,];
-        for(let i = 0; i <a.length; i++){
-            for(let j = i + 1; j <= a.length; j++){
-                if(a[i] == a[j]){
-                    document.write("duplicate array is" + a[i])
-                }
-            }
+        // let a = [1,2,3,4,5,2,3,4,];
+        // for(let i = 0; i <a.length; i++){
+        //     for(let j = i + 1; j <= a.length; j++){
+        //         if(a[i] == a[j]){
+        //             document.write("duplicate array is" + a[i])
+        //         }
+        //     }
+        // }
+    // pattern question
+      for(let i=1; i<=5; i++){
+        for(let j=1; j<=i; j++){
+            document.write("*"," ")
         }
-       
+        document.write("<br>")
+      }
+
     </script>
 </body>
 
