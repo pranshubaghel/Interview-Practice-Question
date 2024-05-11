@@ -10,18 +10,10 @@
 <body>
     <script>
         //         Write a JavaScript program to display the current day and time in the following format.  
-        // Sample Output : Today is : Tuesday.
-        // Current time is : 10 PM : 30 : 38
-
-        //         const currentDate = new Date();
-        // const day = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][currentDate.getDay()];
-        // const hours = currentDate.getHours() > 12 ? currentDate.getHours() - 12 : currentDate.getHours();
-        // const period = currentDate.getHours() >= 12 ? 'PM' : 'AM';
-        // const minutes = currentDate.getMinutes().toString().padStart(2, '0');
-        // const seconds = currentDate.getSeconds().toString().padStart(2, '0');
-
-        // console.log(`Today is: ${day}.`);
-        // console.log(`Current time is: ${hours} ${period} : ${minutes} : ${seconds}`);
+       // const now = new Date();
+        // document.write("Today is: " + new Intl.DateTimeFormat('en-US', {weekday: 'long'}).format(now));
+        // <br/>
+        // document.write("Current time is: " + now.toLocaleTimeString('en-US', {hour: 'numeric', minute: '2-digit', second: '2-digit'}));
 
         // Write a JavaScript program to find the area of a triangle where three sides are 5, 6, 7.
 
@@ -69,14 +61,39 @@
 
         // document.write(result);
         // another way
-        let a = 3;
-        let b = 3;
-        if (a == b) {
-            document.write(3 * (a + b))
+
+        // let a = 3;
+        // let b = 3;
+        // if (a == b) {
+        //     document.write(3 * (a + b))
+        // }
+        // else {
+        //     document.write(a + b)
+        // }
+
+        function isPrime(number) {
+    if (number <= 1) {
+        return false;
+    }
+    if (number <= 3) {
+        return true;
+    }
+    if (number % 2 === 0 || number % 3 === 0) {
+        return false;
+    }
+    let i = 5;
+    while (i * i <= number) {
+        if (number % i === 0 || number % (i + 2) === 0) {
+            return false;
         }
-        else {
-            document.write(a + b)
-        }
+        i += 6;
+    }
+    return true;
+}
+
+// Example usage:
+console.log(isPrime(7)); // Output: true
+console.log(isPrime(12)); // Output: false
 
 
 
