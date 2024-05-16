@@ -35,11 +35,31 @@
         // console.log(newbook)
 
         // how to iterate an array
-         let book = ["math", "gk", "science","hindi","eng"];
-         let booklength = book.length;
-         for(i=0; i<booklength; i++){
-            console.log(`element ${i} is ${book}`);
-         }
+        //  let book = ["math", "gk", "science","hindi","eng"];
+        //  let booklength = book.length;
+        //  for(i=0; i<booklength; i++){
+        //     console.log(`element ${i} is ${book}`);
+        //  }
+        function reverseString(str) {
+    // Split the string into an array of characters
+    var array = str.split('');
+    
+    // Reverse the array
+    var reversedArray = array.reverse();
+    
+    // Join the array back into a string
+    var reversedStr = reversedArray.join('');
+    
+    // Return the reversed string
+    return reversedStr;
+}
+
+// Test the function
+var originalString = "Hello, world!";
+var reversedString = reverseString(originalString);
+console.log("Original string: " + originalString);
+console.log("Reversed string: " + reversedString);
+
             </script>
 </body>
 </html>
