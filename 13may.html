@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
         // let book = ["math", "cs", "eng", "hindi"];
@@ -17,7 +19,7 @@
         // split method 
         // let text = "my name is pranshu";
         // let wordtext = text.split(' ');
-    
+
         // console.log(wordtext);
 
         // join method
@@ -25,7 +27,7 @@
         // let array = ["math","eng","hindi", "cs"];
         // let result = array.join(' ');
         // console.log(result);
-        
+
         // concat method
         // let book = ["math", "gk", "science"];
         // let book2 = ["hindi","engish"];
@@ -41,25 +43,49 @@
         //     console.log(`element ${i} is ${book}`);
         //  }
         function reverseString(str) {
-    // Split the string into an array of characters
-    var array = str.split('');
-    
-    // Reverse the array
-    var reversedArray = array.reverse();
-    
-    // Join the array back into a string
-    var reversedStr = reversedArray.join('');
-    
-    // Return the reversed string
-    return reversedStr;
-}
+            // Split the string into an array of characters
+            var array = str.split('');
 
-// Test the function
-var originalString = "Hello, world!";
-var reversedString = reverseString(originalString);
-console.log("Original string: " + originalString);
-console.log("Reversed string: " + reversedString);
+            // Reverse the array
+            var reversedArray = array.reverse();
 
-            </script>
+            // Join the array back into a string
+            var reversedStr = reversedArray.join('');
+
+            // Return the reversed string
+            return reversedStr;
+        }
+
+        // Test the function
+        var originalString = "Hello, world!";
+        var reversedString = reverseString(originalString);
+        console.log("Original string: " + originalString);
+        console.log("Reversed string: " + reversedString);
+
+        // asscending order
+        // let max=0
+        // let  x= [2,1,6,7,12,5]
+        // for(let i=0; i<x.length; i++){
+        // for(let j= i+1; j<x.length; j++){
+        // if(x[i]>x[j]){
+        //     max= x[i]
+        //     x[i]=x[j]
+        //     x[j]=max
+        // }
+        // }
+        // // document.write(x[i]," ")
+        // }
+
+        // let numbers = [5, 2, 9, 1, 5, 6];
+        // numbers.sort((a, b) => a - b);
+        // console.log(numbers); // Output: [1, 2, 5, 5, 6, 9]
+
+        // Descending order
+        let numbers = [9,8,4,5,7,5];
+        numbers.sort((a,b) => (b-a));
+        console.log(numbers);
+
+    </script>
 </body>
+
 </html>
