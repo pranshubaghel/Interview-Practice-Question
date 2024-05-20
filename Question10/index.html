@@ -9,20 +9,20 @@
 
 <body>
     <script>
-        ///////////////////////largest second num////////////////////////////
-        // let max = 0
-        // let x = [2, 1, 6, 7, 12, 5]
-        // for (let i = 0; i < x.length; i++) {
-        //     for (let j = i + 1; j < x.length; j++) {
-        //         if (x[i] > x[j]) {
-        //             max = x[i]
-        //             x[i] = x[j]
-        //             x[j] = max
-        //         }
-        //     }
-        //     document.write(x[i], " ")
-        // }
-        // document.write("largest second", x[x.length - 2])
+        /////////////////////largest second num////////////////////////////
+        let max = 0
+        let x = [2, 1, 6, 7, 12, 5]
+        for (let i = 0; i < x.length; i++) {
+            for (let j = i + 1; j < x.length; j++) {
+                if (x[i] > x[j]) {
+                    max = x[i]
+                    x[i] = x[j]
+                    x[j] = max
+                }
+            }
+            document.write(x[i], " ")
+        }
+        document.write("largest second", x[x.length - 2])
 
         
     </script>
