@@ -41,6 +41,28 @@ const array = [1, 2, 3, 4, 5, 3, 2, 6, 7, 1];
 const duplicates = findDuplicates(array);
 console.log(duplicates); // Output: [1, 2, 3]
 
+function findAverage(numbers) {
+    if (numbers.length === 0) {
+        return 0; // To handle the case where the array is empty
+    }
+    
+    // Step 1: Sum all the numbers in the array
+    let sum = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+    }
+
+    // Step 2: Divide the sum by the number of elements in the array
+    let average = sum / numbers.length;
+
+    return average;
+}
+
+// Example usage:
+let sum= [1, 2, 3, 4, 5];
+let average = findAverage(array);
+console.log("The average is: " + average); // Output: The average is: 3
+
     </script>
 </body>
 </html>
