@@ -76,6 +76,35 @@ function sumOfEvenNumbers(arr) {
 let numbers = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5];
 let maxNumber = Math.max(...numbers);
 console.log(maxNumber); // Output: 9
+// Function to check if a number is prime
+function isPrime(num) {
+  if (num <= 1) return false; // 0 and 1 are not prime numbers
+  if (num <= 3) return true;  // 2 and 3 are prime numbers
+  
+  if (num % 2 === 0 || num % 3 === 0) return false; // eliminate multiples of 2 and 3
+
+  // Check divisors from 5 to the square root of num
+  for (let i = 5; i * i <= num; i += 6) {
+    if (num % i === 0 || num % (i + 2) === 0) return false;
+  }
+  
+  return true;
+}
+
+// Function to find all prime numbers up to a given limit
+function findPrimes(limit) {
+  const primes = [];
+  for (let i = 2; i <= limit; i++) {
+    if (isPrime(i)) {
+      primes.push(i);
+    }
+  }
+  return primes;
+}
+
+// Example: Find all prime numbers up to 100
+const primesUpTo100 = findPrimes(100);
+console.log(primesUpTo100);
 
 
 
